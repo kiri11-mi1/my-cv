@@ -4,17 +4,40 @@
     </head>
 
     <body>
-        <img src="https://hhcdn.ru/photo/594884880.jpeg?t=1601473970&h=tgeiNs9g81z0zV-iE7wwMg" weight="130px" height="130px">
-        <h1><a href="https://t.me/kiri11_mi1">Миль Кирилл</a></h1>
-        <h3>Junior Pyhton Developer</h3>
-        <h3>25000₽ / мес</h3>
-        <h1>Проекты:</h1>
-            {% for project in projects %}
-                <div class="list">
-                    <a href="{{ project['link'] }}">{{ project['title'] }}</a>
-                    <p>{{ project['description'] }}</p>
-                    <p>{{ project['language'] }}</p>
-                <div>
-            {% endfor %}
+
+        <div class="about_me">
+            <img src="https://hhcdn.ru/photo/594884880.jpeg?t=1601473970&h=tgeiNs9g81z0zV-iE7wwMg" weight="130px" height="130px">
+            <h1><a href="https://t.me/kiri11_mi1">Миль Кирилл</a></h1>
+            <h3>Junior Pyhton Developer</h3>
+            <h3>25000₽ / мес</h3>
+        </div>
+
+        <div class="projects">
+            <h1>Проекты:</h1>
+                {% for project in projects %}
+                    <div class="list">
+                        <a href="{{ project['link'] }}">{{ project['title'] }}</a>
+                        <p>{{ project['description'] }}</p>
+                        <p>{{ project['language'] }}</p>
+                    <div>
+                {% endfor %}
+        </div>
+
+        <div class="contacts">
+
+        </div>
+
+        <div class="skills">
+
+        </div>
+
+        <div class="education">
+
+        </div>
+
+        <div class="sertificates">
+            
+        </div>
+
     </body>
 </html>
